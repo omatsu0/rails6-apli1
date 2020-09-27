@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AppName</title>
+    <meta charset="UTF-8">
+    <title>AwesomeEvents</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container">
+        <%= link_to "AwesomeEvents", root_path, class: "navbar-brand mr-auto" %>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
